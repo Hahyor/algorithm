@@ -1,0 +1,19 @@
+sentence = input("Enter a sentence: ")
+length = 0
+words = 0
+vowels = 0
+
+for char in sentence:
+    length += 1
+    if char in "aeiouAEIOU":
+        vowels += 1
+    if char == " ":
+        words += 1
+    if char == ".":
+        break
+
+words += 1 # Account for last word
+
+print("Length:", length)
+print("Words:", words)
+print("Vowels:", vowels)
